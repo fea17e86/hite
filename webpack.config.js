@@ -7,6 +7,7 @@ module.exports = {
   context: path.resolve(__dirname, "./src"),
   devServer: {
     contentBase: path.resolve(__dirname, "."),
+    port: 3000
   },
   devtool: "source-map",
   entry: ["babel-polyfill", "./index.js"],
@@ -39,7 +40,7 @@ module.exports = {
       allChunks: true
     }),
     new HtmlWebpackPlugin({
-      title: "webpack es7 minimal template",
+      title: "hite",
       hash: true
     }),
     new webpack.optimize.CommonsChunkPlugin({
